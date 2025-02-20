@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CatalogoPeliculas SYSTEM "archivo.dtd">
+
+<CatalogoPeliculas>
+
+<Pelicula titulo="1984">
+    <titulo>1984</titulo>
+    <autores>
+        <autor>pirililll</autor>
+    </autores>
+    <anioestreno>1983</anioestreno>
+    <generos>
+    <genero>Terror</genero>
+    </generos>
+    <duracionenminutos>180</duracionenminutos>
+    <clasificacionedad>+16</clasificacionedad>
+</Pelicula>
+
+<Pelicula titulo="Alien">
+    <titulo>Alien</titulo>
+    <autores>
+        <autor>trollface</autor>
+    </autores>
+    <anioestreno>2000</anioestreno>
+    <generos>
+    <genero>Terror</genero>
+    </generos>
+    <duracionenminutos>160</duracionenminutos>
+    <clasificacionedad>+14</clasificacionedad>
+</Pelicula>
+
+<Pelicula titulo="Lalaland">
+    <titulo>Lalaland</titulo>
+    <autores>
+        <autor>Jaime</autor>    
+    </autores>
+    <anioestreno>2018</anioestreno>
+    <generos>
+    <genero>Romance</genero>
+    </generos>
+    <duracionenminutos>120</duracionenminutos>
+    <clasificacionedad>+12</clasificacionedad>
+</Pelicula>
+
+</CatalogoPeliculas>
