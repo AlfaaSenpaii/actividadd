@@ -1,12 +1,10 @@
 version: '3.8'
-
 services:
-
   redis:
     image: redis:6
     ports:
       - "6379:6379"
-    
+ 
   db:
     image: postgres:latest
     container_name: mydatabase
@@ -14,11 +12,12 @@ services:
     environment:
       - POSTGRES_PASSWORD=password
       - POSTGRES_USER=user
+      - POSTGRES_DB=mydatabase
     ports:
       - "5432:5432"
     volumes:
-      - .:/var/lib/postgresql/data
-    
+      - ./db_data:/var/lib/postgresql/data
+
   web:
     build:
       context: .
@@ -37,7 +36,6 @@ services:
       - "8080:80"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf 
-      - ./index:/usr/share/nginx/html
     depends_on:
       - web
     command: ["nginx", "-g", "daemon off;"]
